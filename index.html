@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свадьбу</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Герой секция -->
+<section class="hero">
+    <div class="hero-content">
+    </div>
+    <div class="scroll-down" id="scrollDown">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+
+    <!-- Детали мероприятия -->
+    <section class="details">
+        <div class="container">
+            <h2 class="section-title">Wedding Day!</h2>
+            <p class="invitation-text">Дорогие гости!</p>
+            <p class="invitation-text">Приглашаем Вас на торжество где вместе с вами хотим разделить самый важный и счастливый день в нашей жизни - День нашей свадьбы!</p>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="detail-title">Дата и время</h3>
+                    <p class="detail-text">28 сентября 2025 года</p>
+                    <p class="detail-text">Банкет: 16:00</p>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="detail-title">Место проведения</h3>
+                    <p class="detail-text">Зал "Ашҭа Лаша"</p>
+                    <button class="submit-btn" id="openMapBtn">Посмотреть на карте</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="rsvp">
+        <div class="container">
+            <h2 class="section-title">Подтвердите участие</h2>
+            <div class="rsvp-form">
+                <form id="rsvpForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests" class="form-label">Количество гостей (включая вас самих)</label>
+                        <select id="guests" class="form-select" required>
+                            <option value="" disabled selected>Выберите количество</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="attending" class="form-label">Вы придете?</label>
+                        <select id="attending" class="form-select" required>
+                            <option value="" disabled selected>Выберите вариант</option>
+                            <option value="yes">С радостью приду!</option>
+                            <option value="no">Не смогу</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Ваши пожелания и идеи</label>
+                        <textarea id="message" class="form-input" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="mapModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h3>Зал "Ашта лаша"</h3>
+            <div class="map-container">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A024038d1ac6e3fa5da3ffce956ab8c3658d7c050ec46e79a432e39a6cd22fc54&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+                <div class="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Дней</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Часов</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Минут</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Секунд</div>
+                </div>
+            </div>
+        <section class="gallery">
+        <div class="container">
+            <p class="date" style="text-align: center; opacity: 0"></p>
+
+        </div>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
