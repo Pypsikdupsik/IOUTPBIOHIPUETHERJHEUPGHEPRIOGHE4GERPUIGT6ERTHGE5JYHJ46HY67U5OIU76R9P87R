@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
         const BOT_TOKEN = "7274111004:AAG80AoBOzzUFlHfbaBe50e7yOGzUCLl6cc";
-const CHAT_ID = "5168984360";
+const CHAT_ID = "5471446287";
 
 // Функция для отправки данных в Telegram
 async function sendToTelegram(formData) {
